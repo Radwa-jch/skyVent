@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Weather Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Weather Dashboard</h1>
+
+    <div id="summary" class="summary-card"></div>
+
+    <div class="recommendations-card">
+      <h2>Recommendations</h2>
+      <div id="recommendations"></div>
+      <h3>Alternative Suitable Days</h3>
+      <div id="alternatives"></div>
+    </div>
+
+    <h2>Weather Charts</h2>
+    <canvas id="forecastChart" width="800" height="400"></canvas>
+
+    <button id="downloadJsonBtn" class="download-btn">Download JSON</button>
+    <button id="downloadCsvBtn" class="download-btn">Download CSV</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>

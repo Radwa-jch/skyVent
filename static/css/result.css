@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/second.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  background: rgba(0,0,0,0.75);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.summary-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.recommendations-card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.recommendations-card div {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+canvas {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 10px 10px 0;
+  padding: 12px 25px;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #e68900;
+}

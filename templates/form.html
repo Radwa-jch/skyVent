@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Your Event</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Plan Your Event</h1>
+
+    <form id="eventForm">
+      <label for="eventType">Event Type:</label>
+      <input type="text" id="eventType" placeholder="e.g., Picnic, Cycling" required>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" required>
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" required>
+
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+  </div>
+
+  <!-- Loading Modal -->
+  <div id="loadingModal" class="modal">
+    <div class="modal-content">
+      <h3>Loading, please wait...</h3>
+      <div class="spinner"></div>
+    </div>
+  </div>
+<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+</body>
+</html>
